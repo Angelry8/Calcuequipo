@@ -1,45 +1,25 @@
 #include <iostream> 
-#include <string>
-
 using namespace std;
 
-
+double multiplicacion(double k, double d){
+    return k * d;
+}
 
 int main() {
-std::cout << "Bienvenido!" <<std::endl;
-
-int N = 0;
-int suma=0;
-int contador=0;
-std::cout << " Digita un numero del 1 al 100" <<std::endl;
-std::cin >> N;
-     
-// Operadores en C++\
-// +, -, *, /, %
-//==, !=, <, <=, >, >=
-// &&, ||, !
 
 
-// Validar
-if (N <= 100 && N >0)
-{
-    while (contador <= N)
-    {
-        suma = suma + contador;
-        contador++ ;
-    }     
-        
-    
-    std::cout <<"La suma de 0 hasta "<< N  <<" es  " << suma <<std::endl;
+double k= 0;
+double d= 0;
+cout << "Digite el numero 1: " <<endl;
+cin >> k;
+cout<< "Digite el numero 2: " <<endl;
+cin >> d;
 
-}else
-{
-
-std::cout <<" Numero invalido" <<std::endl;
+cout << "El resultado de la multiplicacion es: " << multiplicacion(k,d) << endl;
 
 
-}
-std::cout <<" Muchas Gracias" <<std::endl;
+
+
 return 0;
 
 }
